@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+	<!-- ME OWN FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.6/css/mdb.min.css" rel="stylesheet">
+	<!-- Auto completion -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+    <script src="static/js/tableHead.js"></script>
+    <!-- ME OWN CSS -->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+</head>
+<body>
+<div class="col-lg-4 col-md-6 ml-auto mb-4 offset-3">
+<form  method="POST" class="">
+    {% csrf_token %}
+    <section class="form-elegant">
+    
+            <!--Form without header-->
+            <div class="card">
+    
+                <div class="card-body mx-4">
+    
+                    <!--Header-->
+                    <div class="text-center">
+                        <h3 class="dark-grey-text mb-5">
+                            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S'inscrire</font></font></strong>
+                        </h3>
+                    </div>
+    
+                    <!--Body-->
+                    <div class="md-form">
+                        <input type="text" id="Form-email1" class="form-control">
+                        <label for="Form-email1" class=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Votre email</font></font></label>
+                    </div>
+    
+                    <div class="md-form pb-3">
+                        <input type="password" id="Form-pass1" class="form-control">
+                        <label for="Form-pass1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Votre mot de passe</font></font></label>
+                        <p class="font-small blue-text d-flex justify-content-end"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mot de </font><a href="#" class="blue-text ml-1"><font style="vertical-align: inherit;">passe</font></a><font style="vertical-align: inherit;"> oublié
+                             </font></font><a href="#" class="blue-text ml-1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">?</font></font></a>
+                        </p>
+                    </div>
+    
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn purple-gradient btn-block btn-rounded z-depth-1a waves-effect waves-light"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S'incrire</font></font></button>
+                    </div>
+    
+                    <div class="row my-3 d-flex justify-content-center">
+                        <!--Facebook-->
+                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a waves-effect waves-light">
+                            <i class="fab fa-facebook-f purple-text text-center"></i>
+                        </button>
+                        <!--Twitter-->
+                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a waves-effect waves-light">
+                            <i class="fab fa-twitter purple-text"></i>
+                        </button>
+                        <!--Google +-->
+                        <button type="button" class="btn btn-white btn-rounded z-depth-1a waves-effect waves-light">
+                            <i class="fab fa-google-plus-g purple-text"></i>
+                        </button>
+                    </div>
+    
+                </div>
+    
+                <!--Footer-->
+               
+    
+            </div>
+            <!--/Form without header-->
+    
+        </section>
+    </div>
+</form>
+</body>
+</html>

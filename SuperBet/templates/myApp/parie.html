@@ -1,0 +1,11 @@
+<h1>Result du jour </h1>
+{% for row in result %}
+<br>
+    <span>H:{{row.heure}}     </span><br><br>
+    <span><strong>{{row.eqa}}</strong>:</span>
+    <span>    {{result.scors}} </span>
+    <span><strong>{{row.eqb}}</strong>:</span>
+</div>
+{% endfor %}
+
+
